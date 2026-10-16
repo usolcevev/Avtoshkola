@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="container header__inner">
       <a href="index.html" class="logo">
@@ -20,8 +19,8 @@
       </a>
       <nav class="nav" id="nav">
         <a href="#categories">Категории</a>
-        <a href="#advantages">Преимущества</a>
-        <a href="#how">Как проходит</a>
+        <a href="#advantages">О нас</a>
+        <a href="#fleet">Автопарк</a>
         <a href="#prices">Цены</a>
         <a href="#reviews">Отзывы</a>
         <a href="contacts.html">Контакты</a>
@@ -33,18 +32,22 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
+  <!-- Hero with background photo -->
+  <section class="hero hero--photo">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1600&q=80" alt="Вождение автомобиля" loading="eager">
+      <div class="hero__overlay"></div>
+    </div>
     <div class="container hero__inner">
-      <div class="hero__content">
-        <p class="hero__badge">Воронеж · набор открыт</p>
-        <h1 class="hero__title">Научим водить уверенно<br>и сдать экзамен с первого раза</h1>
-        <p class="hero__subtitle">Опытные инструкторы, прозрачные цены без скрытых доплат, удобный график и современный автопарк. Теория + практика в одном месте.</p>
+      <div class="hero__content hero__content--light">
+        <p class="hero__badge hero__badge--light">Воронеж · набор открыт</p>
+        <h1 class="hero__title hero__title--light">Научим водить уверенно<br>и сдать экзамен с первого раза</h1>
+        <p class="hero__subtitle hero__subtitle--light">Опытные инструкторы, прозрачные цены без скрытых доплат, удобный график и современный автопарк.</p>
         <div class="hero__actions">
           <a href="#form" class="btn btn--primary btn--lg">Записаться на обучение</a>
-          <a href="tel:+74732917535" class="btn btn--outline btn--lg">8 (473) 291-75-35</a>
+          <a href="tel:+74732917535" class="btn btn--ghost btn--lg">8 (473) 291-75-35</a>
         </div>
-        <div class="hero__stats">
+        <div class="hero__stats hero__stats--light">
           <div class="stat">
             <span class="stat__num">5 000+</span>
             <span class="stat__label">выпускников</span>
@@ -60,92 +63,115 @@
         </div>
       </div>
       <div class="hero__card">
-        <h3>Первое занятие — бесплатно</h3>
-        <p>Познакомьтесь с инструктором и попробуйте вождение без обязательств.</p>
-        <ul class="hero__list">
-          <li>Теория в удобном формате</li>
-          <li>Рассрочка без процентов</li>
-          <li>Автопарк 2020–2025 гг.</li>
-          <li>Сопровождение на экзамен</li>
-        </ul>
-        <a href="#form" class="btn btn--primary btn--block">Оставить заявку</a>
+        <div class="hero__card-img">
+          <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&q=80" alt="Урок вождения" loading="lazy">
+        </div>
+        <div class="hero__card-body">
+          <h3>Первое занятие — бесплатно</h3>
+          <p>Познакомьтесь с инструктором и попробуйте вождение без обязательств.</p>
+          <ul class="hero__list">
+            <li>Теория в удобном формате</li>
+            <li>Рассрочка без процентов</li>
+            <li>Автопарк 2020–2025 гг.</li>
+            <li>Сопровождение на экзамен</li>
+          </ul>
+          <a href="#form" class="btn btn--primary btn--block">Оставить заявку</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Categories -->
+  <!-- Categories with photos -->
   <section class="section" id="categories">
     <div class="container">
       <h2 class="section__title">Категории обучения</h2>
       <p class="section__subtitle">Выберите программу под свои цели. Возможна переподготовка и совмещение категорий.</p>
-      <div class="cards">
-        <article class="card">
-          <div class="card__icon">🏍️</div>
-          <h3>Категория A / A1</h3>
-          <p>Мотоциклы и мопеды. Срок обучения — от 1 месяца.</p>
-          <p class="card__price">от <strong>9 000 ₽</strong></p>
-          <a href="#form" class="btn btn--outline btn--sm">Записаться</a>
+      <div class="cards cards--photo">
+        <article class="card card--photo">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=500&q=80" alt="Мотоцикл" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>Категория A / A1</h3>
+            <p>Мотоциклы и мопеды. Срок — от 1 месяца.</p>
+            <p class="card__price">от <strong>9 000 ₽</strong></p>
+            <a href="#form" class="btn btn--outline btn--sm">Записаться</a>
+          </div>
         </article>
-        <article class="card card--featured">
+        <article class="card card--photo card--featured">
           <div class="card__badge">Популярно</div>
-          <div class="card__icon">🚗</div>
-          <h3>Категория B</h3>
-          <p>Легковые автомобили и микроавтобусы до 3,5 т. МКПП и АКПП.</p>
-          <p class="card__price">от <strong>9 000 ₽</strong></p>
-          <a href="#form" class="btn btn--primary btn--sm">Записаться</a>
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500&q=80" alt="Легковой автомобиль" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>Категория B</h3>
+            <p>Легковые авто до 3,5 т. МКПП и АКПП.</p>
+            <p class="card__price">от <strong>9 000 ₽</strong></p>
+            <a href="#form" class="btn btn--primary btn--sm">Записаться</a>
+          </div>
         </article>
-        <article class="card">
-          <div class="card__icon">🚚</div>
-          <h3>Категория C</h3>
-          <p>Грузовые автомобили. Переподготовка с B на C.</p>
-          <p class="card__price">от <strong>9 000 ₽</strong></p>
-          <a href="#form" class="btn btn--outline btn--sm">Записаться</a>
+        <article class="card card--photo">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=500&q=80" alt="Грузовик" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>Категория C</h3>
+            <p>Грузовые автомобили. Переподготовка с B.</p>
+            <p class="card__price">от <strong>9 000 ₽</strong></p>
+            <a href="#form" class="btn btn--outline btn--sm">Записаться</a>
+          </div>
         </article>
-        <article class="card">
-          <div class="card__icon">🔄</div>
-          <h3>Переподготовка</h3>
-          <p>A→B, B→C, C→B и другие комбинации.</p>
-          <p class="card__price">от <strong>9 000 ₽</strong></p>
-          <a href="#form" class="btn btn--outline btn--sm">Записаться</a>
+        <article class="card card--photo">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=500&q=80" alt="Переподготовка" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>Переподготовка</h3>
+            <p>A→B, B→C, C→B и другие комбинации.</p>
+            <p class="card__price">от <strong>9 000 ₽</strong></p>
+            <a href="#form" class="btn btn--outline btn--sm">Записаться</a>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Advantages -->
+  <!-- About with split image -->
   <section class="section section--alt" id="advantages">
     <div class="container">
-      <h2 class="section__title">Почему выбирают нас</h2>
-      <div class="features">
-        <div class="feature">
-          <div class="feature__num">01</div>
-          <h3>Прозрачные цены</h3>
-          <p>Вся стоимость фиксируется в договоре. Без скрытых доплат за бензин или «дополнительные часы» перед экзаменом.</p>
+      <div class="about-split">
+        <div class="about-split__img">
+          <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80" alt="Инструктор и ученик" loading="lazy">
+          <div class="about-split__badge">
+            <span>15+</span>
+            <small>лет опыта</small>
+          </div>
         </div>
-        <div class="feature">
-          <div class="feature__num">02</div>
-          <h3>Опытные инструкторы</h3>
-          <p>Спокойные и внимательные преподаватели. Можно сменить инструктора, если не подойдёт.</p>
-        </div>
-        <div class="feature">
-          <div class="feature__num">03</div>
-          <h3>Удобный график</h3>
-          <p>Утренние, дневные и вечерние занятия. Точки встречи рядом с домом и остановками.</p>
-        </div>
-        <div class="feature">
-          <div class="feature__num">04</div>
-          <h3>Современный автопарк</h3>
-          <p>Автомобили 2020–2025 годов выпуска, МКПП и АКПП. Всё оформлено в ГИБДД.</p>
-        </div>
-        <div class="feature">
-          <div class="feature__num">05</div>
-          <h3>Подготовка к ГИБДД</h3>
-          <p>Внутренний экзамен по тем же правилам, что и в ГАИ. Сопровождение в день сдачи.</p>
-        </div>
-        <div class="feature">
-          <div class="feature__num">06</div>
-          <h3>Рассрочка и скидки</h3>
-          <p>Рассрочка от школы без процентов. Скидки студентам и по акции «приведи друга».</p>
+        <div class="about-split__content">
+          <h2 class="section__title" style="text-align:left; margin-bottom:16px;">Почему выбирают нас</h2>
+          <p style="color:var(--text-muted); margin-bottom:28px; font-size:16px;">Мы не просто готовим к экзамену — учим уверенно и безопасно водить в реальном городе.</p>
+          <div class="features features--compact">
+            <div class="feature">
+              <div class="feature__num">01</div>
+              <h3>Прозрачные цены</h3>
+              <p>Всё в договоре. Без скрытых доплат перед экзаменом.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__num">02</div>
+              <h3>Опытные инструкторы</h3>
+              <p>Спокойные преподаватели. Можно сменить инструктора.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__num">03</div>
+              <h3>Удобный график</h3>
+              <p>Утро, день или вечер. Филиалы рядом с домом.</p>
+            </div>
+            <div class="feature">
+              <div class="feature__num">04</div>
+              <h3>Подготовка к ГИБДД</h3>
+              <p>Внутренний экзамен и сопровождение в день сдачи.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -155,36 +181,67 @@
   <section class="section" id="how">
     <div class="container">
       <h2 class="section__title">Как проходит обучение</h2>
+      <p class="section__subtitle">От заявки до прав — понятный путь в 4 шага</p>
       <div class="steps">
         <div class="step">
           <div class="step__num">1</div>
           <h3>Заявка и договор</h3>
-          <p>Оставляете заявку на сайте или по телефону. Заключаем договор, выбираете тариф и график.</p>
+          <p>Оставляете заявку, выбираете тариф и график.</p>
         </div>
         <div class="step">
           <div class="step__num">2</div>
           <h3>Теория</h3>
-          <p>Очные занятия или онлайн. Полный курс ПДД, билеты, первая помощь и устройство автомобиля.</p>
+          <p>Очно или онлайн: ПДД, билеты, первая помощь.</p>
         </div>
         <div class="step">
           <div class="step__num">3</div>
           <h3>Практика</h3>
-          <p>Автодром + город. Эстакада, парковка, змейка, маршруты экзамена. Индивидуальный темп.</p>
+          <p>Автодром + город. Эстакада, парковка, маршруты.</p>
         </div>
         <div class="step">
           <div class="step__num">4</div>
           <h3>Экзамен в ГИБДД</h3>
-          <p>Внутренний экзамен, запись и сопровождение. Помогаем до получения прав.</p>
+          <p>Внутренний экзамен, запись и сопровождение.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet / Gallery -->
+  <section class="section section--alt" id="fleet">
+    <div class="container">
+      <h2 class="section__title">Наш автопарк</h2>
+      <p class="section__subtitle">Современные автомобили с МКПП и АКПП. Всё оформлено в ГИБДД.</p>
+      <div class="gallery">
+        <div class="gallery__item gallery__item--large">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900&q=80" alt="Учебный автомобиль" loading="lazy">
+          <div class="gallery__caption">Легковые авто · категория B</div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&q=80" alt="Авто на АКПП" loading="lazy">
+          <div class="gallery__caption">АКПП и МКПП</div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80" alt="Автопарк" loading="lazy">
+          <div class="gallery__caption">Новые модели</div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&q=80" alt="Вождение в городе" loading="lazy">
+          <div class="gallery__caption">Практика в городе</div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&q=80" alt="Автодром" loading="lazy">
+          <div class="gallery__caption">Занятия на автодроме</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Prices -->
-  <section class="section section--alt" id="prices">
+  <section class="section" id="prices">
     <div class="container">
       <h2 class="section__title">Тарифы</h2>
-      <p class="section__subtitle">Цены указаны ориентировочно. Точную стоимость и акции уточняйте при записи по телефону 8 (473) 291-75-35.</p>
+      <p class="section__subtitle">Точную стоимость уточняйте по телефону 8 (473) 291-75-35</p>
       <div class="pricing">
         <div class="price-card">
           <h3>Базовый</h3>
@@ -221,29 +278,44 @@
           <a href="#form" class="btn btn--outline btn--block">Выбрать</a>
         </div>
       </div>
-      <p class="prices-note">Скидка студентам 1 000 ₽ (по студенческому), акция «Приведи друга» — по 1 000 ₽ каждому. Точные цены уточняйте при записи.</p>
+      <p class="prices-note">Скидка студентам 1 000 ₽ · акция «Приведи друга» — по 1 000 ₽ каждому</p>
     </div>
   </section>
 
-  <!-- Reviews -->
-  <section class="section" id="reviews">
+  <!-- Reviews with avatars -->
+  <section class="section section--alt" id="reviews">
     <div class="container">
       <h2 class="section__title">Отзывы учеников</h2>
       <div class="reviews">
         <blockquote class="review">
-          <div class="review__stars">★★★★★</div>
+          <div class="review__header">
+            <img class="review__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80" alt="Анна" loading="lazy">
+            <div>
+              <cite>Анна</cite>
+              <div class="review__stars">★★★★★</div>
+            </div>
+          </div>
           <p>Сдала с первого раза! Инструктор очень спокойный, всё объяснял понятно. Цены честные, никаких доплат в конце не было.</p>
-          <cite>— Анна, категория B</cite>
         </blockquote>
         <blockquote class="review">
-          <div class="review__stars">★★★★★</div>
+          <div class="review__header">
+            <img class="review__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80" alt="Дмитрий" loading="lazy">
+            <div>
+              <cite>Дмитрий</cite>
+              <div class="review__stars">★★★★★</div>
+            </div>
+          </div>
           <p>Учился на АКПП. Автомобили новые, график подстроили под работу. Рекомендую всем, кто боится экзаменов.</p>
-          <cite>— Дмитрий, категория B</cite>
         </blockquote>
         <blockquote class="review">
-          <div class="review__stars">★★★★★</div>
+          <div class="review__header">
+            <img class="review__avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&q=80" alt="Елена" loading="lazy">
+            <div>
+              <cite>Елена</cite>
+              <div class="review__stars">★★★★★</div>
+            </div>
+          </div>
           <p>Прошла переподготовку с B на C. Всё быстро и по делу. Спасибо инструкторам за терпение!</p>
-          <cite>— Елена, категория C</cite>
         </blockquote>
       </div>
     </div>
@@ -255,12 +327,12 @@
       <div class="form-block">
         <div class="form-block__info">
           <h2>Запишитесь на обучение</h2>
-          <p>Оставьте заявку — перезвоним в рабочее время и ответим на все вопросы. Или звоните сразу.</p>
+          <p>Оставьте заявку — перезвоним в рабочее время. Или звоните сразу.</p>
           <ul class="form-block__list">
             <li>📞 <a href="tel:+74732917535" style="color:inherit">8 (473) 291-75-35</a></li>
             <li>✉️ <a href="mailto:Startpdd@yandex.ru" style="color:inherit">Startpdd@yandex.ru</a></li>
             <li>📍 г. Воронеж, ул. Пушкинская, 42</li>
-            <li>📍 <a href="contacts.html" style="color:inherit; text-decoration: underline;">Все филиалы →</a></li>
+            <li>📍 <a href="contacts.html" style="color:inherit; text-decoration:underline">Все филиалы →</a></li>
           </ul>
         </div>
         <form class="form" id="lead-form">
@@ -282,7 +354,7 @@
             </select>
           </div>
           <div class="form__group">
-            <label for="comment">Комментарий (необязательно)</label>
+            <label for="comment">Комментарий</label>
             <textarea id="comment" name="comment" rows="3" placeholder="Удобное время, вопросы..."></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--block btn--lg">Отправить заявку</button>
@@ -296,7 +368,7 @@
   <section class="section section--alt" id="contacts">
     <div class="container">
       <h2 class="section__title">Контакты</h2>
-      <p class="section__subtitle">5 филиалов в Воронеже и области. Выберите удобный.</p>
+      <p class="section__subtitle">5 филиалов в Воронеже и области</p>
       <div class="contacts">
         <div class="contact-item">
           <h3>Телефон</h3>
@@ -318,7 +390,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
@@ -327,16 +398,16 @@
       </div>
       <div class="footer__links">
         <a href="#categories">Категории</a>
+        <a href="#fleet">Автопарк</a>
         <a href="#prices">Цены</a>
         <a href="#form">Запись</a>
         <a href="contacts.html">Контакты</a>
       </div>
-      <p class="footer__copy">© 2015–2026 Автошкола «Старт». Контакты с сайта avtoshkola-voronezh.ru. Сайт создан в демонстрационных целях.</p>
+      <p class="footer__copy">© 2015–2026 Автошкола «Старт». Контакты с сайта avtoshkola-voronezh.ru. Фото — Unsplash. Сайт создан в демонстрационных целях.</p>
     </div>
   </footer>
 
   <div class="toast" id="toast">Заявка отправлена! Мы скоро перезвоним.</div>
-
   <script src="script.js"></script>
 </body>
 </html>
