@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автошкола Старт — обучение вождению в Воронеже</title>
+  <meta name="description" content="Автошкола в Воронеже. Обучение на категории A, B, C. Прозрачные цены, опытные инструкторы, теория и практика. Запишитесь онлайн.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">🚗</span>
+        <span class="logo__text">Автошкола <strong>Старт</strong></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#categories">Категории</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#how">Как проходит</a>
+        <a href="#prices">Цены</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a href="#form" class="btn btn--primary header__btn">Записаться</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__badge">Воронеж · с 2015 года</p>
+        <h1 class="hero__title">Научим водить уверенно<br>и сдать экзамен с первого раза</h1>
+        <p class="hero__subtitle">Опытные инструкторы, прозрачные цены без скрытых доплат, удобный график и современный автопарк. Теория + практика в одном месте.</p>
+        <div class="hero__actions">
+          <a href="#form" class="btn btn--primary btn--lg">Записаться на обучение</a>
+          <a href="#prices" class="btn btn--outline btn--lg">Смотреть цены</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num">5 000+</span>
+            <span class="stat__label">выпускников</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">87%</span>
+            <span class="stat__label">сдают с 1 раза</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">15+</span>
+            <span class="stat__label">инструкторов</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__card">
+        <h3>Первое занятие — бесплатно</h3>
+        <p>Познакомьтесь с инструктором и попробуйте вождение без обязательств.</p>
+        <ul class="hero__list">
+          <li>✓ Теория в удобном формате</li>
+          <li>✓ Рассрочка без процентов</li>
+          <li>✓ Автопарк 2020–2025 гг.</li>
+          <li>✓ Сопровождение на экзамен</li>
+        </ul>
+        <a href="#form" class="btn btn--primary btn--block">Оставить заявку</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section" id="categories">
+    <div class="container">
+      <h2 class="section__title">Категории обучения</h2>
+      <p class="section__subtitle">Выберите программу под свои цели. Возможна переподготовка и совмещение категорий.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">🏍️</div>
+          <h3>Категория A / A1</h3>
+          <p>Мотоциклы и мопеды. Срок обучения — от 1 месяца.</p>
+          <p class="card__price">от <strong>9 000 ₽</strong></p>
+          <a href="#form" class="btn btn--outline btn--sm">Записаться</a>
+        </article>
+        <article class="card card--featured">
+          <div class="card__badge">Популярно</div>
+          <div class="card__icon">🚗</div>
+          <h3>Категория B</h3>
+          <p>Легковые автомобили и микроавтобусы до 3,5 т. МКПП и АКПП.</p>
+          <p class="card__price">от <strong>12 900 ₽</strong></p>
+          <a href="#form" class="btn btn--primary btn--sm">Записаться</a>
+        </article>
+        <article class="card">
+          <div class="card__icon">🚚</div>
+          <h3>Категория C</h3>
+          <p>Грузовые автомобили. Переподготовка с B на C.</p>
+          <p class="card__price">от <strong>14 000 ₽</strong></p>
+          <a href="#form" class="btn btn--outline btn--sm">Записаться</a>
+        </article>
+        <article class="card">
+          <div class="card__icon">🔄</div>
+          <h3>Переподготовка</h3>
+          <p>A→B, B→C, C→B и другие комбинации.</p>
+          <p class="card__price">от <strong>9 000 ₽</strong></p>
+          <a href="#form" class="btn btn--outline btn--sm">Записаться</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section class="section section--alt" id="advantages">
+    <div class="container">
+      <h2 class="section__title">Почему выбирают нас</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__num">01</div>
+          <h3>Прозрачные цены</h3>
+          <p>Вся стоимость фиксируется в договоре. Без скрытых доплат за бензин или «дополнительные часы» перед экзаменом.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__num">02</div>
+          <h3>Опытные инструкторы</h3>
+          <p>Спокойные и внимательные преподаватели. Можно сменить инструктора, если не подойдёт.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__num">03</div>
+          <h3>Удобный график</h3>
+          <p>Утренние, дневные и вечерние занятия. Точки встречи рядом с домом и остановками.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__num">04</div>
+          <h3>Современный автопарк</h3>
+          <p>Автомобили 2020–2025 годов выпуска, МКПП и АКПП. Всё оформлено в ГИБДД.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__num">05</div>
+          <h3>Подготовка к ГИБДД</h3>
+          <p>Внутренний экзамен по тем же правилам, что и в ГАИ. Сопровождение в день сдачи.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__num">06</div>
+          <h3>Рассрочка и скидки</h3>
+          <p>Рассрочка от школы без процентов. Скидки студентам и по акции «приведи друга».</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how">
+    <div class="container">
+      <h2 class="section__title">Как проходит обучение</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <h3>Заявка и договор</h3>
+          <p>Оставляете заявку на сайте или по телефону. Заключаем договор, выбираете тариф и график.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <h3>Теория</h3>
+          <p>Очные занятия или онлайн. Полный курс ПДД, билеты, первая помощь и устройство автомобиля.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <h3>Практика</h3>
+          <p>Автодром + город. Эстакада, парковка, змейка, маршруты экзамена. Индивидуальный темп.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">4</div>
+          <h3>Экзамен в ГИБДД</h3>
+          <p>Внутренний экзамен, запись и сопровождение. Помогаем до получения прав.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prices -->
+  <section class="section section--alt" id="prices">
+    <div class="container">
+      <h2 class="section__title">Тарифы на категорию B</h2>
+      <p class="section__subtitle">Цены указаны ориентировочно. Точную стоимость и акции уточняйте при записи.</p>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Базовый</h3>
+          <p class="price-card__amount">12 900 ₽</p>
+          <ul>
+            <li>Теория (очно / онлайн)</li>
+            <li>56 часов практики</li>
+            <li>МКПП или АКПП</li>
+            <li>Внутренний экзамен</li>
+          </ul>
+          <a href="#form" class="btn btn--outline btn--block">Выбрать</a>
+        </div>
+        <div class="price-card price-card--popular">
+          <div class="price-card__badge">Выгодно</div>
+          <h3>Стандарт</h3>
+          <p class="price-card__amount">15 900 ₽</p>
+          <ul>
+            <li>Всё из Базового</li>
+            <li>Доп. часы при необходимости</li>
+            <li>Сопровождение на экзамен</li>
+            <li>Рассрочка без %</li>
+          </ul>
+          <a href="#form" class="btn btn--primary btn--block">Выбрать</a>
+        </div>
+        <div class="price-card">
+          <h3>Комфорт</h3>
+          <p class="price-card__amount">19 900 ₽</p>
+          <ul>
+            <li>Всё из Стандарта</li>
+            <li>Индивидуальный график</li>
+            <li>Приоритетная запись</li>
+            <li>Помощь с документами</li>
+          </ul>
+          <a href="#form" class="btn btn--outline btn--block">Выбрать</a>
+        </div>
+      </div>
+      <p class="prices-note">Также доступны категории A, C и переподготовка. Скидка студентам 1 000 ₽, акция «Приведи друга» — по 1 000 ₽ каждому.</p>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <h2 class="section__title">Отзывы учеников</h2>
+      <div class="reviews">
+        <blockquote class="review">
+          <div class="review__stars">★★★★★</div>
+          <p>«Сдала с первого раза! Инструктор очень спокойный, всё объяснял понятно. Цены честные, никаких доплат в конце не было.»</p>
+          <cite>— Анна, категория B</cite>
+        </blockquote>
+        <blockquote class="review">
+          <div class="review__stars">★★★★★</div>
+          <p>«Учился на АКПП. Автомобили новые, график подстроили под работу. Рекомендую всем, кто боится экзаменов.»</p>
+          <cite>— Дмитрий, категория B</cite>
+        </blockquote>
+        <blockquote class="review">
+          <div class="review__stars">★★★★★</div>
+          <p>«Прошла переподготовку с B на C. Всё быстро и по делу. Спасибо инструкторам за терпение!»</p>
+          <cite>— Елена, категория C</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="section section--form" id="form">
+    <div class="container">
+      <div class="form-block">
+        <div class="form-block__info">
+          <h2>Запишитесь на обучение</h2>
+          <p>Оставьте заявку — перезвоним в течение 15 минут в рабочее время и ответим на все вопросы. Первое занятие бесплатно.</p>
+          <ul class="form-block__list">
+            <li>📞 +7 (473) 2XX-XX-XX</li>
+            <li>📍 г. Воронеж, ул. Пушкинская, 42</li>
+            <li>🕒 Пн–Пт 9:00–20:00, Сб 10:00–16:00</li>
+          </ul>
+        </div>
+        <form class="form" id="lead-form">
+          <div class="form__group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required placeholder="Иван">
+          </div>
+          <div class="form__group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+7 (900) 000-00-00">
+          </div>
+          <div class="form__group">
+            <label for="category">Категория</label>
+            <select id="category" name="category">
+              <option value="B">Категория B</option>
+              <option value="A">Категория A</option>
+              <option value="C">Категория C</option>
+              <option value="other">Переподготовка / другое</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="comment">Комментарий (необязательно)</label>
+            <textarea id="comment" name="comment" rows="3" placeholder="Удобное время, вопросы..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block btn--lg">Отправить заявку</button>
+          <p class="form__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="section section--alt" id="contacts">
+    <div class="container">
+      <h2 class="section__title">Контакты</h2>
+      <div class="contacts">
+        <div class="contact-item">
+          <h3>Адрес</h3>
+          <p>г. Воронеж, ул. Пушкинская, дом 42</p>
+        </div>
+        <div class="contact-item">
+          <h3>Телефон</h3>
+          <p><a href="tel:+74732000000">+7 (473) 2XX-XX-XX</a></p>
+        </div>
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p><a href="mailto:info@avtoshkola-start.ru">info@avtoshkola-start.ru</a></p>
+        </div>
+        <div class="contact-item">
+          <h3>Режим работы</h3>
+          <p>Пн–Пт: 9:00–20:00<br>Сб: 10:00–16:00<br>Вс: выходной</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__text">Автошкола <strong>Старт</strong></span>
+        <p>Обучение вождению в Воронеже. Категории A, B, C.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#categories">Категории</a>
+        <a href="#prices">Цены</a>
+        <a href="#form">Запись</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+      <p class="footer__copy">© 2015–2026 Автошкола «Старт». Все права защищены. Сайт создан в демонстрационных целях.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Заявка отправлена! Мы скоро перезвоним.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
